@@ -1,0 +1,30 @@
+page-selectservice {
+
+}
+
+.checkbox-select{
+    width: 20px;
+    height: 20px;
+    margin: 54px 0 0px -8px !important;
+}
+
+.checkbox-select.first{
+    margin: 8px 0 0 -8px !important;
+}
+
+.dropdown-sort{
+    width: 100%;
+    background: #cd4d50;
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    border-radius: 5px;
+    //float: left;
+}
+
+.ion-select{
+    display: flex;
+    overflow: hidden;
+    max-width: 100%;
+    //text-align: left;
+}

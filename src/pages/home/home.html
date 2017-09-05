@@ -1,0 +1,435 @@
+<ion-header class="header-home">
+
+
+   <ion-navbar  color="custom-color">
+           <button light ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    <ion-title class="header-name">JOB ORDER REQUEST</ion-title>
+
+
+   </ion-navbar>  
+
+</ion-header>
+
+
+
+
+<ion-content>
+
+   <!-- <button ion-button secondary menuToggle>Toggle Menu</button>  -->
+
+  <div>
+  <ion-segment [(ngModel)]="requests" class="segment-color">
+    <ion-segment-button value="incoming">
+     Incoming 
+    </ion-segment-button>
+    <ion-segment-button value="quote">
+     Sent for Quote
+	</ion-segment-button>
+	<ion-segment-button value="completed">
+	 Completed
+	</ion-segment-button>
+  </ion-segment>
+</div>
+
+<div class="col-xs-12">
+<div [ngSwitch]="requests">
+  <ion-list *ngSwitchCase="'incoming'" >
+    
+<!-- tabs -->
+<div class="tabs-header-home">
+
+        
+      
+      <!-- Incoming -->
+      <div class="tab-pane fade in active home-tabs-box">
+      
+	      	<div class="row title-ltr">
+	      		<div class="col-xs-12">
+	      			<h4 class="light-gray title-heading">Mon, Apr-25-2017</h4>
+	      		</div>
+	        </div>	
+
+	        <div class="detail-box-outer">
+		        <div class="col-xs-12 detail-box">
+					<i class="fa fa-angle-right fa-3x icon-arrow-ltr" aria-hidden="true"></i>
+					<!-- <ion-icon class= "forward-icon" name="arrow-forward" (click)="viewDetails()"></ion-icon> -->
+					<img src="assets/fwd_arrow@2x-2.png" class="forward-icon" (click)="viewDetails()">
+			        <table class="table table-home ltr">
+			        <tr>
+			        	<td class="no-border"><b>Job Title:</b></td> 
+			        	<td class="no-border"> Electrical</td>
+			        </tr>
+			        <tr>
+			        	<td class="no-border"><b>User Name:</b></td> 
+			        	<td class="no-border">Ahmed</td>
+			        </tr>
+			        <tr>
+			        	<td class="no-border"><b>Job Order ID:</b></td> 
+			        	<td class="no-border">65218</td>
+			        </tr>
+			        <tr>
+			        	<td class="no-border"><b>Date & Time:</b></td> 
+			        	<td class="no-border">04-05-2017, 05:30pm</td>
+					</tr>
+			        </table>
+			        	
+				</div> 
+				<div class="col-xs-12 no-p">
+		        	<button class="btn-yellow-curve half pull-left" (click)="viewDetails()"> View</button>    
+		        	<button class="btn-gray-curve half pull-right">Call</button>    
+		        </div>   
+				<!-- <button class="btn-yellow-curve" (click)="viewDetails()">View</button>     -->
+        </div>
+              
+        <div class="row title-ltr">
+	      	<div class="col-xs-12">
+	          <h4 class="light-gray title-heading">Mon, Apr-25-2017</h4>
+	      	</div>
+	    </div> 
+			
+		    <div class="detail-box-outer">
+		        <div class="col-xs-12 detail-box">
+					<i class="fa fa-angle-right fa-3x icon-arrow-ltr" aria-hidden="true"></i>
+					<!-- <ion-icon class= "forward-icon" name="arrow-forward" (click)="viewDetails()"></ion-icon> -->
+					<img src="assets/fwd_arrow@2x-2.png" class="forward-icon" (click)="viewDetails()">
+			        <table class="table table-home ltr">
+			        <tr>
+			        	<td class="no-border"><b>Job Title:</b></td> 
+			        	<td class="no-border">Electrical</td>
+			        </tr>
+			        <tr>
+			        	<td class="no-border"><b>User Name:</b></td> 
+			        	<td class="no-border">Ahmed</td>
+			        </tr>
+			        <tr>
+			        	<td class="no-border"><b>Job Order ID:</b></td> 
+			        	<td class="no-border">65218</td>
+			        </tr>
+			        <tr>
+			        	<td class="no-border"><b>Date & Time:</b></td> 
+			        	<td class="no-border">04-05-2017, 05:30pm</td>
+			        </tr>
+			        </table>
+			        	
+				</div> 
+				<div class="col-xs-12 no-p">
+		        	<button class="btn-yellow-curve half pull-left" (click)="viewDetails()">View</button>    
+		        	<button class="btn-gray-curve half pull-right">Call</button>    
+		        </div>    
+				<!-- <button class="btn-yellow-curve" (click)="viewDetails()">View</button>     -->
+		    </div>
+
+
+
+
+	        <div class="row title-ltr">
+	      		<div class="col-xs-12">
+	      			<h4 class="light-gray title-heading">Mon, Apr-25-2017</h4>
+	      		</div>
+	        </div>
+
+	        <div class="detail-box-outer">
+		        <div class="col-xs-12 detail-box">
+					<i class="fa fa-angle-right fa-3x icon-arrow-ltr" aria-hidden="true"></i>
+					<!-- <ion-icon class= "forward-icon" name="arrow-forward" (click)="viewDetails()"></ion-icon> -->
+					<img src="assets/fwd_arrow@2x-2.png" class="forward-icon" (click)="viewDetails()">
+			        <table class="table table-home ltr">
+			        <tr>
+			        	<td class="no-border"><b>Job Title:</b></td> 
+			        	<td class="no-border">Electrical</td>
+			        </tr>
+			        <tr>
+			        	<td class="no-border"><b>User Name:</b></td> 
+			        	<td class="no-border">Ahmed</td>
+			        </tr>
+			        <tr>
+			        	<td class="no-border"><b>Job Order ID:</b></td> 
+			        	<td class="no-border">65218</td>
+			        </tr>
+			        <tr>
+			        	<td class="no-border"><b>Date & Time:</b></td> 
+			        	<td class="no-border">04-05-2017, 05:30pm</td>
+			        </tr>
+			        </table>
+			        	
+				</div> 
+				<div class="col-xs-12 no-p">
+		        	<button class="btn-yellow-curve half pull-left" (click)="viewDetails()">View</button>    
+		        	<button class="btn-gray-curve half pull-right">Call</button>    
+		        </div>    
+		        <!-- <button class="btn-yellow-curve" (click)="viewDetails()">View</button>     -->
+		    </div>
+
+      </div>
+      <!-- Incoming end -->
+</div>
+
+
+  </ion-list>
+
+<!--Quoted Segment-->
+
+  <ion-list *ngSwitchCase="'quote'">
+
+    <!-- tabs -->
+<div class="tabs-header-home">
+
+
+    <!-- Quoted -->
+      <div class="tab-pane fade in active home-tabs-box">
+			
+			<div class="row title-ltr">
+	      		<div class="col-xs-12">
+	      			<h4 class="light-gray title-heading">Mon, Apr-25-2017</h4>
+	      		</div>
+	        </div>
+
+	        <div class="detail-box-outer">
+		        <div class="col-xs-12 detail-box">
+					<i class="fa fa-angle-right fa-3x icon-arrow-ltr" aria-hidden="true"></i>
+					<!-- <ion-icon class= "forward-icon" name="arrow-forward" (click)="goToQuotationView()"></ion-icon> -->
+					<img src="assets/fwd_arrow@2x-2.png" class="forward-icon" (click)="goToQuotationView()">
+			        <table class="table table-home ltr">
+			        <tr>
+			        	<td class="no-border"><b>Job Title:</b></td> 
+			        	<td class="no-border">Electrical</td>
+			        </tr>
+			        <tr>
+			        	<td class="no-border"><b>User Name:</b></td> 
+			        	<td class="no-border">Ahmed</td>
+			        </tr>
+			        <tr>
+			        	<td class="no-border"><b>Job Order ID:</b></td> 
+			        	<td class="no-border">65218</td>
+			        </tr>
+			        <tr>
+			        	<td class="no-border"><b>Date & Time:</b></td> 
+			        	<td class="no-border">04-05-2017, 05:30pm</td>
+			        </tr>
+			        </table>
+			        	
+		        </div>    
+		        <button class="btn-yellow-curve" (click)="goToJobOrderDetailsView()">View</button>    
+        </div>  
+              
+        <div class="row title-ltr">
+	      	<div class="col-xs-12">
+	      		<h4 class="light-gray title-heading">Mon, Apr-25-2017</h4>
+	      	</div>
+	    </div>
+
+		    <div class="detail-box-outer">
+		        <div class="col-xs-12 detail-box">
+					<i class="fa fa-angle-right fa-3x icon-arrow-ltr" aria-hidden="true"></i>
+					<!-- <ion-icon class= "forward-icon" name="arrow-forward" (click)="goToQuotationView()"></ion-icon> -->
+					<img src="assets/fwd_arrow@2x-2.png" class="forward-icon" (click)="goToQuotationView()">
+			        <table class="table table-home ltr">
+			        <tr>
+			        	<td class="no-border"><b>Job Title:</b></td> 
+			        	<td class="no-border">Electrical</td>
+			        </tr>
+			        <tr>
+			        	<td class="no-border"><b>User Name:</b></td> 
+			        	<td class="no-border">Ahmed</td>
+			        </tr>
+			        <tr>
+			        	<td class="no-border"><b>Job Order ID:</b></td> 
+			        	<td class="no-border">65218</td>
+			        </tr>
+			        <tr>
+			        	<td class="no-border"><b>Date & Time:</b></td> 
+			        	<td class="no-border">04-05-2017, 05:30pm</td>
+			        </tr>
+
+			        </table>
+			        	
+		        </div>    
+		        <button class="btn-yellow-curve" (click)="goToJobOrderDetailsView()">View</button>    
+        </div> 
+              
+        <div class="row title-ltr">
+	      	<div class="col-xs-12">
+	      		<h4 class="light-gray title-heading">Mon, Apr-25-2017</h4>
+	      	</div>
+	      </div>
+
+		    <div class="detail-box-outer">
+		        <div class="col-xs-12 detail-box">
+					<i class="fa fa-angle-right fa-3x icon-arrow-ltr" aria-hidden="true"></i>
+					<!-- <ion-icon class= "forward-icon" name="arrow-forward" (click)="goToQuotationView()"></ion-icon> -->
+					<img src="assets/fwd_arrow@2x-2.png" class="forward-icon" (click)="goToQuotationView()">
+			        <table class="table table-home ltr">
+			        <tr>
+			        	<td class="no-border"><b>Job Title:</b></td> 
+			        	<td class="no-border">Electrical</td>
+			        </tr>
+			        <tr>
+			        	<td class="no-border"><b>User Name:</b></td>  
+			        	<td class="no-border">Ahmed</td>
+			        </tr>
+			        <tr>
+			        	<td class="no-border"><b>Job Order ID:</b></td> 
+			        	<td class="no-border">65218</td>
+			        </tr>
+			        <tr>
+			        	<td class="no-border"><b>Date & Time:</b></td> 
+			        	<td class="no-border">04-05-2017, 05:30pm</td>
+			        </tr>
+
+
+			        </table>
+			        	
+		        </div>    
+		        <button class="btn-yellow-curve" (click)="goToJobOrderDetailsView()">View</button>    
+		    </div> 
+
+      </div>
+      <!-- Quoted end -->
+
+</div>
+   
+  </ion-list>
+
+
+<!--Quoted Segment-->
+
+<ion-list *ngSwitchCase="'completed'">
+	
+		<!-- tabs -->
+	<div class="tabs-header-home">
+	
+	
+		<!-- Completed -->
+		  <div class="tab-pane fade in active home-tabs-box">
+				
+				<div class="row title-ltr">
+					  <div class="col-xs-12">
+						  <h4 class="light-gray title-heading">Mon, Apr-25-2017</h4>
+					  </div>
+				</div>
+	
+				<div class="detail-box-outer">
+					<div class="col-xs-12 detail-box">
+						<i class="fa fa-angle-right fa-3x icon-arrow-ltr" aria-hidden="true"></i>
+						<!-- <ion-icon class= "forward-icon" name="arrow-forward" (click)="goToQuotationView()"></ion-icon> -->
+						<img src="assets/fwd_arrow@2x-2.png" class="forward-icon" (click)="goToQuotationView()">
+						<table class="table table-home ltr">
+						<tr>
+							<td class="no-border"><b>Job Title:</b></td> 
+							<td class="no-border">Electrical</td>
+						</tr>
+						<tr>
+							<td class="no-border"><b>User Name:</b></td> 
+							<td class="no-border">Ahmed</td>
+						</tr>
+						<tr>
+							<td class="no-border"><b>Job Order ID:</b></td> 
+							<td class="no-border">65218</td>
+						</tr>
+						<tr>
+							<td class="no-border"><b>Date & Time:</b></td> 
+							<td class="no-border">04-05-2017, 05:30pm</td>
+						</tr>
+						<tr class="price-box">
+							<td><b>Quote Amount:</b></td> 
+							<td class="text-right ltr" style="padding-right: 10px;"><b>SAR 100</b></td>
+						</tr>
+	
+						</table>
+							
+					</div>    
+					<button class="btn-yellow-curve" (click)="goToQuotationView()">View</button>    
+			</div>  
+				  
+			<div class="row title-ltr">
+				  <div class="col-xs-12">
+					  <h4 class="light-gray title-heading">Mon, Apr-25-2017</h4>
+				  </div>
+			  </div>
+	
+				<div class="detail-box-outer">
+					<div class="col-xs-12 detail-box">
+						<i class="fa fa-angle-right fa-3x icon-arrow-ltr" aria-hidden="true"></i>
+						<!-- <ion-icon class= "forward-icon" name="arrow-forward" (click)="goToQuotationView()"></ion-icon> -->
+						<img src="assets/fwd_arrow@2x-2.png" class="forward-icon" (click)="goToQuotationView()">
+						<table class="table table-home ltr">
+						<tr>
+							<td class="no-border"><b>Job Title:</b></td> 
+							<td class="no-border">Electrical</td>
+						</tr>
+						<tr>
+							<td class="no-border"><b>User Name:</b></td> 
+							<td class="no-border">Ahmed</td>
+						</tr>
+						<tr>
+							<td class="no-border"><b>Job Order ID:</b></td> 
+							<td class="no-border">65218</td>
+						</tr>
+						<tr>
+							<td class="no-border"><b>Date & Time:</b></td> 
+							<td class="no-border">04-05-2017, 05:30pm</td>
+						</tr>
+						<tr class="price-box">
+							<td class="quote-amount"><b>Quote Amount:</b></td> 
+							<td class="text-right ltr" style="padding-right: 10px;"><b>SAR 100</b></td>
+						</tr>
+	
+						</table>
+							
+					</div>    
+					<button class="btn-yellow-curve" (click)="goToQuotationView()">View</button>    
+			</div> 
+				  
+			<div class="row title-ltr">
+				  <div class="col-xs-12">
+					  <h4 class="light-gray title-heading">Mon, Apr-25-2017</h4>
+				  </div>
+			  </div>
+	
+				<div class="detail-box-outer">
+					<div class="col-xs-12 detail-box">
+						<i class="fa fa-angle-right fa-3x icon-arrow-ltr" aria-hidden="true"></i>
+						<!-- <ion-icon class= "forward-icon" name="arrow-forward" (click)="goToQuotationView()"></ion-icon> -->
+						<img src="assets/fwd_arrow@2x-2.png" class="forward-icon" (click)="goToQuotationView()">
+						<table class="table table-home ltr">
+						<tr>
+							<td class="no-border"><b>Job Title:</b></td> 
+							<td class="no-border">Electrical</td>
+						</tr>
+						<tr>
+							<td class="no-border"><b>User Name:</b></td>  
+							<td class="no-border">Ahmed</td>
+						</tr>
+						<tr>
+							<td class="no-border"><b>Job Order ID:</b></td> 
+							<td class="no-border">65218</td>
+						</tr>
+						<tr>
+							<td class="no-border"><b>Date & Time:</b></td> 
+							<td class="no-border">04-05-2017, 05:30pm</td>
+						</tr>
+						<tr class="price-box">
+							<td class="quote-amount"><b>Quote Amount:</b></td> 
+							<td class="text-right ltr" style="padding-right: 10px;"><b>SAR 100</b></td>
+						</tr>
+	
+						</table>
+							
+					</div>    
+					<button class="btn-yellow-curve" (click)="goToQuotationView()">View</button>    
+				</div> 
+	
+		  </div>
+		  <!-- Completed end -->
+	
+	</div>
+	   
+	  </ion-list>
+	
+
+
+</div>
+</div>
+</ion-content>
